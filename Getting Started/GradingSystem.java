@@ -13,6 +13,28 @@
 public class GradingSystem {
     public static void main(String[] args) {
         // Write your code here
+           Scanner sc = new Scanner(System.in);
+        System.out.println("Enter student marks : ");
+        int marks = sc.nextInt();
+        if(marks<0 || marks>100){
+            System.out.println("INVALID INPUT");
+        }
+        else if(marks>90){
+            System.out.println("Excellent");
+        }
+        else if (marks>80 && marks<=90){
+            System.out.println("Good");
+        }
+        else if (marks>70 && marks<=80){
+            System.out.println("Fair");
+        }
+        else if(marks>60 && marks<=700){
+            System.out.println("Meets expectation");
+        }
+        else if (marks<=60){
+            System.out.println("Below par");
+        }
+
         
         
     }
