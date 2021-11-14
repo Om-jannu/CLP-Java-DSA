@@ -5,7 +5,6 @@
 public class Hello {
     public static void main(String[] args) {
         // Write your code here
-        System.out.println("Siddhartha");
-        System.out.println("Sahu");
+       System.out.println("'Hello world'");
     }
 }
