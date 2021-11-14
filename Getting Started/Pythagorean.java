@@ -12,7 +12,30 @@ import java.util.*;
   
   public static void main(String[] args) {
     // write your code here 
-
+Scanner sc = new Scanner(System.in);
+            System.out.println("Enter three numbers :-");
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int c = sc.nextInt();
+            int temp_a = a;
+            int temp_b = b;
+            int temp_c = c;
+            int temp1 = 0, temp2 = 0;
+            if (b > a) {
+                temp1 = a;
+                a = b;
+                b = temp1;
+            }
+            if (c > a) {
+                temp2 = a;
+                a = c;
+                c = temp2;
+            }
+            if (a * a == ((b * b) + (c * c))) {
+                System.out.println("true");
+            } else {
+                System.out.println(+temp_a + "," + temp_b + "," + temp_c + " are not a pythagorean trio");
+            }
 
    }
   }
