@@ -14,11 +14,13 @@ import java.util.*;
   
   public static void main(String[] args) {
     // write your code here  
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    
-    for(int i=1; i*i <= n; i++){
-      System.out.println(i*i);
+     int bright;
+        Scanner sc =  new Scanner(System.in);
+        System.out.print("Enter number of bulbs : ");
+        int n = sc.nextInt();
+            for (int i=1;i*i<=n;i++){
+                bright = i*i;
+                System.out.println(bright);
     }
    }
   }
